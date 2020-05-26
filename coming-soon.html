@@ -1,0 +1,189 @@
+<html data-ng-app=portfolio>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
+<title>Cepheus Analytics</title>
+<link href="portico.css" rel=stylesheet>
+<link href=fab.min.css rel=stylesheet>
+<link href=media-min-961.css rel=stylesheet>
+<link href=media-max-960.css rel=stylesheet>
+<link href=media-320.css rel=stylesheet>
+<link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+<link href="images/nav-header/chepheus-logo-only.svg"  rel="shortcut icon" type=image/x-icon> <link href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon>
+<link rel="stylesheet" href="./contactus.css">
+<style>
+    .template_logo-container img {
+        height: 180px;
+        padding-left: 25px;
+    }
+    .contactusTitle {
+        padding-top: 0;
+        font-size: 2em;
+    }
+    .template_logo-container{
+    }
+    .card-section-container {
+        min-height: 100%;
+        width: 800px;
+    }
+    .cs_description{
+        padding-top: 0;
+        font-size: 16px;
+        font-family: cool;
+        padding: 0px 40px 15px 40px;
+        color: #1a313e;
+    }
+    .cardHolder {
+        padding: 10px 40px 50px 40px;
+    }
+    @media screen and (max-width: 960px) {
+      .card-section-container {
+            min-height: 100%;
+            width: 100%;
+        }  
+        .contactusTitle {
+            padding: 15px 40px 15px 40px;
+            text-align: center;
+        }
+         .template_logo-container img {
+            height: 180px;
+            padding-left: 0px;
+        }
+        .template_logo-container{
+            width: 100%;
+            text-align: center;
+        }
+        .template_logo-container a{
+            display: block;
+        }
+        .cs_description{
+            text-align: center;
+        }
+    }
+</style>
+<body data-ng-controller=portfolioController>
+    <div class=loader-container id=loader-div>
+        <div class="loaderImg">
+            <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo" />
+        </div>
+        <div>
+            Loading...
+        </div>
+    </div>
+    <div class=body-pre></div>
+    <div class=body-main><a style=display:none class=go-to-top id=back-to-top>
+            <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
+        </a>
+        <div class=header-container>
+            <div>
+            </div>
+           
+        </div>
+        <div class="card-section-container">
+          <!--   <div>
+                <img class="logo-title" src="images/pages/cepheus-trans-logo.png" alt="Logo" />
+            </div> -->
+           
+            <div>
+                 <div class="template_logo-container">
+                     <a href="./index.html" style=text-decoration:none;color:#234a58>
+                        <img src="images/pages/cepheus-trans-logo.png" alt="Logo" >
+                    </a>
+                </div>
+                <div class="contactusTitle">
+                    COMING SOON...
+                </div>
+                <div class="cs_description">
+                     Please reach out to us on below mentioned contact information. We are working on website and will be back Online shortly. Thank you for your patience.
+                </div>
+            </div>
+            <div class="cardHolder">
+                <div class="card-container contact-card-container">
+                    <div class=circle_div_container>
+                        <div class=circle_icon_container>
+                            <div class=circular_div><i class="fas fa-map-marker-alt" aria-hidden=true></i></div>
+                        </div>
+                        <div class="contact_details_all contactus-details">
+                            <div class="sub_text_contact country-title address-title">United Kingdom</div>
+                        </div>
+                    </div>
+                    <div class="address-container">
+                        <div>29 Farm Street, Mayfair,</div>
+                        <div>London W1J 5RL</div>
+                    </div>
+                    <div class="address-sep"></div>
+                    <div class=circle_div_container>
+                        <div class=circle_icon_container>
+                            <div class=circular_div><i class="fas fa-map-marker-alt" aria-hidden=true></i></div>
+                        </div>
+                        <div class="contact_details_all contactus-details">
+                            <div class="sub_text_contact country-title address-title">India</div>
+                        </div>
+                    </div>
+                    <div class="address-container">
+                        <div>604 ‘B’ Wing, Prathamesh Tower </div>
+                        <div>Raghuvanshi Mill Compound</div>
+                        <div>Senapati Bapat Marg, Lower Parel (W)</div>
+                        <div>Mumbai – 400 013</div>
+                    </div>
+                </div>
+                <div class="card-container contact-card-container  contact-mid  last">
+                    <div class=circle_div_container>
+                        <div class=circle_icon_container>
+                            <div class=circular_div><i class="fas fa-phone small-icon" aria-hidden=true></i></div>
+                        </div>
+                        <div class="contact_details_all contactus-details">
+                            <div class="sub_text_contact country-title ">+44-203-129-4884</div>
+                        </div>
+                    </div>
+                    <div class="circle_div_container contact-email">
+                        <div class=circle_icon_container>
+                            <div class=circular_div><i class="fas fa-envelope small-icon" aria-hidden=true></i></div>
+                        </div>
+                        <div class="contact_details_all contactus-details"><a style=text-decoration:none;color:#234a58
+                                href=mailto:info@cepheusanalytics.com>
+                                <div class="sub_text_contact country-title">info@cepheusanalytics.com
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <!-- *******************************Footer******************************-->
+        <div class=footer>
+        <div class="copyrights made"><i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
+        </div>
+        <div class=footer_social>
+            <div class=social_media_icons><!-- <a style=text-decoration:none;color:#fff href=https://twitter.com/vaibhavti
+                    target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
+                </a> --><a style=text-decoration:none;color:#fff
+                    href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+                </a><!-- <a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204 target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
+                </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
+                    target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
+                </a> --></div>
+        </div>
+    </div>
+    </div>
+    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js> </script> <script
+        src=jQuery-1.9.1.js></script>
+    <script src=jQqueryKnob.js></script>
+    <script src=smooth%20scroll.js></script>
+    <script src=inview.js></script>
+    <script src=soul.min.js></script>
+    <script src=files.js></script>
+    <script src=tweenMax.min.js></script>
+    <script src=ScrollToPlugin.min.js></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src=https://www.gstatic.com/firebasejs/3.0.3/firebase.js> </script> <script
+        src=https://www.gstatic.com/firebasejs/live/3.0/firebase.js> </script> <script
+        src=https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js> </script>
+        
+</body>
+</html>

@@ -1,0 +1,498 @@
+<html data-ng-app=portfolio>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
+<title>Cepheus Analytics</title>
+<link href=portico.css rel=stylesheet>
+<link href=fab.min.css rel=stylesheet>
+<link href=media-min-961.css rel=stylesheet>
+<link href=media-max-960.css rel=stylesheet>
+<link href=media-320.css rel=stylesheet>
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+<link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
+<link href="offerings.css" rel="stylesheet">
+<link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon>
+<link href="images/nav-header/chepheus-logo-only.svg" rel=icon type=image/x-icon>
+<link rel="stylesheet" href="css/slider/owl.carousel.min.css">
+<link rel="stylesheet" href="css/slider/owl.theme.default.min.css">
+<link rel="stylesheet" href="slider.css">
+<script>
+    !function (e, t, a, n, c, o, s) {
+        e.GoogleAnalyticsObject = c, e[c] = e[c] || function () { (e[c].q = e[c].q || []).push(arguments) }, e[c].l = 1 * new
+            Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(o, s)
+    }(window, document, "script", 0, "ga"), ga("create", "UA-81644386-1", "auto"), ga("send", "pageview")
+</script>
+
+<body data-ng-controller=portfolioController>
+<div class=loader-container id=loader-div>
+    <div class="loaderImg">
+        <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+    </div>
+    <div>
+        Loading...
+    </div>
+</div>
+<div class=body-pre></div>
+<div class=body-main>
+    <a style=display:none class=go-to-top id=back-to-top>
+        <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
+    </a>
+    <!--**************************Header**************************-->
+    <div class=header-container>
+        <div class=header>
+            <div style=width:100%;height:100%></div>
+        </div>
+        <div class=fab-cont style=display:none>
+            <div class="line one" id=one></div>
+            <div class="line two" id=two></div>
+            <div class="line three" id=three></div>
+        </div>
+        <div class=top-menu id=top-menu>
+            <a href="./index.html" style=text-decoration:none;color:#234a58>
+                <div class="logo-container">
+                    <img src="images/nav-header/cepheusanalytics_hori_trans.png" alt="Logo"/>
+                    <!-- <div class="cephuesLogo">CEPHEUS</div> -->
+                </div>
+            </a>
+            <!--**************************Nav**************************-->
+            <div class="menu-item-container">
+                <div class=top-menu-sub id=Contact>
+                    <a href="./index.html" style=text-decoration:none;color:#234a58>
+                        Home
+                    </a>
+                </div>
+
+                <div class=top-menu-sub id=Education data-ng-click="scroller('midsection') ">About Us
+
+                </div>
+                <div class=top-menu-sub id="solutions">
+                    <span class="solutionClick">Solutions</span>
+                    <i class="fas fa-angle-right solutionClick" id="unique"></i>
+                    <ul>
+                        <li class=top-menu-sub>
+                            <a href="./origination.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Origination</li>
+                        </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Analytics
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./servicing.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Servicing
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./technology.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Technology
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./support.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> ERP Implementation and Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=top-menu-sub id="resources"><span class="resourcesClick">Resources</span><i
+                        class="fas fa-angle-right resourcesClick"></i>
+                    <ul>
+                        <li class=top-menu-sub><i class="fa fa-link"></i> News</li>
+                        <li class=top-menu-sub><i class="fa fa-link"></i> Media</li>
+                        <li class=top-menu-sub><i class="fa fa-link"></i> Blog</li>
+                        <li class=top-menu-sub><i class="fa fa-link"></i> Case Study</li>
+                    </ul>
+                </div>
+
+                <div class=top-menu-sub id=Contact>
+                    <a href="./ContactUs.html" style=text-decoration:none;color:#234a58>
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header-sub text">
+        <div class=Header-sub-sub>
+            <div class="title_logo">
+                <img src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+            </div>
+            <!--<div class="head-main shimmer">CEPHEUS ANALYTICS</div>
+            <div class=webdeveloper>
+                <p>Formed in 2014, Cepheus Analytics is a UK based provider of origination,
+                    analytics (underwriting and scorecard development), loan servicing, Technology solutions
+                    implementation services to Financial Companies and Private Equity firms.</p>
+            </div>-->
+            <!--************************Slider**********************-->
+            <div class="site-wrap slider-body">
+                <section class="site-section testimonial-wrap">
+                    <div class="slide-one-item home-slider owl-carousel">
+                        
+                        <div>
+                            <div class="testimonial">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 text-center">
+                                            <h2 class="text-black h1 site-section-heading text-center">&ldquo;Interested
+                                                in monetizing your accumulated data to drive business strategy
+                                                ?&rdquo;</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<blockquote class="mb-5">
+                                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                        reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum
+                                        eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                                </blockquote>-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 text-center">
+                                            <h2 class="text-black h1 site-section-heading text-center">&ldquo;Want to
+                                                streamline and increase efficiency to bring about digital transformation
+                                                ?&rdquo;</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  <blockquote class="mb-5">
+                                      <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                          reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum
+                                          eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                                  </blockquote>-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 text-center">
+                                            <h2 class="text-black h1 site-section-heading text-center">&ldquo;Looking to
+                                                build sustainable moats to offer differentiation from competition ?&rdquo;</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <blockquote class="mb-5">
+                                     <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                         reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum
+                                         eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                                 </blockquote>-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 text-center">
+                                            <h2 class="text-black h1 site-section-heading text-center">&ldquo;High cost Third
+                                                Party ERP solutions are not properly integrated and need extensive
+                                                support ?&rdquo;</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                               <!-- <blockquote class="mb-5">
+                                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                        reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga
+                                        beatae illum
+                                        eligendi incidunt consequatur. Amet dolores excepturi earum unde
+                                        iusto.&rdquo;</p>
+                                </blockquote>-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 text-center">
+                                            <h2 class="text-black h1 site-section-heading text-center">&ldquo;Either in
+                                                Lending business or highly customer facing industries ?&rdquo;</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<blockquote class="mb-5">
+                                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                        reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum
+                                        eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                                </blockquote>-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class=social-media-homepage>
+            <div class=social_media_icons>
+                <!-- <a style=text-decoration:none;color:#fff
+                    href=https://twitter.com/vaibhavti target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
+                </a> -->
+                <a style=text-decoration:none;color:#fff
+                   href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+                </a>
+                <!--  <a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204
+                     target=_blank>
+                     <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
+                 </a>
+                 <a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
+                     target=_blank>
+                     <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
+                 </a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *******************************why choose us catalog******************************-->
+<div class="card-section-container">
+    <div>
+        <div class="whyUsTitle">
+            Why Choose Us?
+        </div>
+    </div>
+    <div class="cardHolder">
+        <div class="card-container first">
+            <div class="card">
+                <div class=image>
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <div class="card-title">
+                    Diverse skills
+                </div>
+                <div class="card-description">
+                    We have team of dedicated experts averaging more than 8 years of experience. Our team is capable
+                    to support projects across the globe with office based out of Europe and Asia.
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class=image>
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="card-title">
+                    Dependable
+                </div>
+                <div class="card-description">
+                    We ensure that your expectations and objectives are met with constant coordination and
+                    communication. We are in this business to do what we love and make sure that we deliver on every
+                    promise committed.
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class=image>
+                    <i class="fas fa-running"></i>
+                </div>
+                <div class="card-title">
+                    Quick Response
+                </div>
+                <div class="card-description">
+                    We understand that time is of essence in this ever changing global competitive market and
+                    on-time delivery is a key differentiator. We scale up per your requirements and deliver
+                    solutions on agreed timelines without compromising on the quality of deliverables.
+                </div>
+            </div>
+        </div>
+        <div class="card-container last">
+            <div class="card">
+                <div class="image last-card">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <div class="card-title">
+                    Low TCO
+                </div>
+                <div class="card-description">
+                    We offer wide range of reasonably priced, scalable, secure and easy to manage solutions. Our
+                    lost cost solutions help you drive down technology costs and ensure low TCO. We are good at what
+                    we do and our efficiency helps us drive our pricing competitively.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *******************************Offering catalog******************************-->
+<div class="wrapper row2 bgded overlay" style="background-image:url('images/pages/home/section3-bg.jpg');">
+    <section class="hoc container clear">
+        <div class="sectiontitle">
+            <h6 class="heading">What we offer?</h6>
+        </div>
+        <ul class="nospace group services">
+            <li class="one_quarter addflex first"><i class="fas fa-4x fa-chart-bar btmspace-30"></i>
+                <h6 class="heading font-x1">Analytics</h6>
+                <ul class="nospace">
+                    <li><i class="fa fa-link"></i> <a href="#">Data Analytics</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Modelling</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Surveillance</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Trustee Support</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Credit Markets</a></li>
+                </ul>
+            </li>
+            <li class="one_quarter addflex"><i class="fas fa-4x fa-user-shield btmspace-30"></i>
+                <h6 class="heading font-x1">Support</h6>
+                <ul class="nospace">
+                    <li><i class="fa fa-link"></i> <a href="#">Ongoing Maintenance </a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Consulting </a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Security</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Regulation and Compliance</a></li>
+                </ul>
+            </li>
+            <li class="one_quarter addflex"><i class="fas fa-4x fa-cogs btmspace-30"></i>
+                <h6 class="heading font-x1">Technology</h6>
+                <ul class="nospace">
+                    <li><i class="fa fa-link"></i> <a href="#">Loan management system</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Cloud based solutions</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Excel Support</a></li>
+                    <!--<li><i class="fa fa-link"></i> <a href="#">Vehicula nibh nulla vel</a></li>-->
+                </ul>
+            </li>
+            <li class="one_quarter addflex"><i class="fas fa-4x fa-search-dollar btmspace-30"></i></i>
+                <h6 class="heading font-x1">Originations</h6>
+                <ul class="nospace">
+                    <li><i class="fa fa-link"></i> <a href="#">Online Marketing</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Origination cost monitoring </a></li>
+                    <!--<li><i class="fa fa-link"></i> <a href="#">Ut eleifend felis scelerisque</a></li>
+                <li><i class="fa fa-link"></i> <a href="#">Nullam euismod elementum</a></li>-->
+                </ul>
+            </li>
+            <li class="one_quarter addflex"><i class="fas fa-4x fa-tools btmspace-30"></i>
+                <h6 class="heading font-x1">Servicing</h6>
+                <ul class="nospace">
+                    <li><i class="fa fa-link"></i> <a href="#">Back office Services</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Analytical Services</a></li>
+                    <li><i class="fa fa-link"></i> <a href="#">Call center Services</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+        <footer class="center"><a class="btn" href="#">Read More <i class="fas fa-angle-double-right"></i></a>
+        </footer>
+    </section>
+</div>
+<!-- *******************************Clients Served******************************-->
+<div class="wrapper row3">
+    <div class="whyUsTitle">
+        Whom do we serve?
+    </div>
+    <figure class="hoc container clear clients">
+        <ul class="nospace group">
+            <li class="one_quarter first client_name">
+                <a class="" href="#">
+                    <h2>Private Equity</h2>
+                </a>
+            </li>            
+            <li class="one_quarter client_name">
+                <a class="" href="#">
+                    <h2>Charities and </h2>
+                    <h2>Foundations</h2>
+                </a>
+            </li>
+            <li class="one_quarter client_name">
+                <a class="" href="#">
+                    <h2>Publishing houses</h2>
+                </a>
+            </li>
+            <li class="one_quarter client_name">
+                <a class="" href="#">
+                    <h2>Lenders</h2>
+                </a>
+            </li>
+        </ul>
+    </figure>
+</div>
+<!-- *******************************Blog******************************-->
+<div class="wrapper bgded overlay" style="background-image:url('images/pages/home/section5-bg.jpg');">
+    <section class="hoc container clear">
+        <div class="sectiontitle">
+            <h6 class="heading">Blog</h6>
+            <!--<p>Nec faucibus nisi fusce ultricies mi non mattis mollis velit</p>-->
+        </div>
+        <div class="group latest addflexToBlog">
+            <article class="one_third first">
+                <a class="imgover btmspace-30 white-border" href="#">
+                    <img src="images/pages/home/homePageBlog/blog1.jpg" alt="Template Demo Image">
+                </a>
+                <h6 class="heading font-x1 no-margin-heading">Pretium molestie pretium</h6>
+                <ul class="nospace meta blog-creation-details">
+                    <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
+                    <li><span class="color-green">Jan 18, 2019</span></li>
+                </ul>
+                <p>Aliquet erat nisi in nisi in vel porttitor leo proin eget volutpat lorem donec a ipsum nunc dui
+                    enim sollicitudin eget…</p>
+                <footer><a href="#">Read More</a></footer>
+            </article>
+            <article class="one_third">
+                <a class="imgover btmspace-30 white-border" href="#">
+                    <img src="images/pages/home/homePageBlog/blog2.jpg" alt="Template Demo Image">
+                </a>
+                <h6 class="heading font-x1 no-margin-heading">Pretium molestie pretium</h6>
+                <ul class="nospace meta blog-creation-details">
+                    <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
+                    <li><span class="color-green">Jan 18, 2019</span></li>
+                </ul>
+                <p>Sit amet libero nam gravida eros eget quam porttitor iaculis phasellus ultrices turpis sapien
+                    mauris tortor pulvinar…</p>
+                <footer><a href="#">Read More</a></footer>
+            </article>
+            <article class="one_third">
+                <a class="imgover btmspace-30 white-border" href="#">
+                    <img src="images/pages/home/homePageBlog/blog3.jpg" alt="Template Demo Image">
+                </a>
+                <h6 class="heading font-x1 no-margin-heading">Pretium molestie pretium</h6>
+                <ul class="nospace meta blog-creation-details">
+                    <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
+                    <li><span class="color-green">Jan 18, 2019</span></li>
+                </ul>
+                <p>Consequat ante duis non lobortis urna integer vehicula ex non ante ultricies maximus sed tempus
+                    felis non enim…</p>
+                <footer><a href="#">Read More</a></footer>
+            </article>
+        </div>
+        <footer class="center"><a class="btn" href="#">Read More <i class="fas fa-angle-double-right"></i></a>
+        </footer>
+    </section>
+</div>
+<!-- *******************************Footer******************************-->
+<div class=footer>
+    <div class="copyrights made"><i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All
+        rights reserved.
+    </div>
+    <div class=footer_social>
+        <div class=social_media_icons><!-- <a style=text-decoration:none;color:#fff href=https://twitter.com/vaibhavti
+                    target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
+                </a> --><a style=text-decoration:none;color:#fff
+                           href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
+            <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+        </a><!-- <a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204 target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
+                </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
+                    target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
+                </a> --></div>
+    </div>
+</div>
+
+
+<script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js></script>
+<!--<script src=jQuery-1.9.1.js></script>-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src=jQqueryKnob.js></script>
+<script src=smooth%20scroll.js></script>
+<script src=inview.js></script>
+<script src=soul.min.js></script>
+<script src=files.js></script>
+<script src=tweenMax.min.js></script>
+<script src=ScrollToPlugin.min.js></script>
+<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+<script src=https://www.gstatic.com/firebasejs/3.0.3/firebase.js></script>
+<script src=https://www.gstatic.com/firebasejs/live/3.0/firebase.js></script>
+<script src=https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js></script>
+<script src="js/owl.carousel.min.js"></script>
+</body>
+
+</html>
