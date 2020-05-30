@@ -1,67 +1,75 @@
 <html data-ng-app=portfolio>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
 <title>Cepheus Analytics</title>
-<link href=portico.css rel=stylesheet>
+<link href=portico.min.css rel=stylesheet>
 <link href=fab.min.css rel=stylesheet>
-<link href=media-min-961.css rel=stylesheet>
-<link href=media-320.css rel=stylesheet>
-<link href=media-max-960.css rel=stylesheet>
+<link href=media-min-961.min.css rel=stylesheet>
+<link href=media-320.min.css rel=stylesheet>
+<link href=media-max-960.min.css rel=stylesheet>
 <link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
-<link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon> <link
-    href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon> <link rel="stylesheet"
-    href="./template.css">
+<link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon>
+<link href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon>
+<link rel="stylesheet" href="./template.min.css">
 <style>
-   .home-link {
+    .home-link {
         margin-top: 25px;
         background: #1a313e;
         color: #fff;
         padding: 10px 50px 10px;
         border-radius: 30px;
     }
+
     .home-link:hover {
         background: #0a8182;
     }
-    .template_logo-container{
+
+    .template_logo-container {
         height: auto;
     }
-    .home-link a{
+
+    .home-link a {
         color: #fff;
     }
-    .top-backg{
+
+    .top-backg {
         height: calc(100% - 100px);
+        display: block;
     }
+
     .contactusTitle {
         -webkit-box-shadow: none;
-                box-shadow: none;
-        padding:unset;
+        box-shadow: none;
+        padding: unset;
         font-size: 3em;
     }
-@media screen and (max-width: 960px) {
-    .top-backg{
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
+
+    @media screen and (max-width: 960px) {
+        .top-backg {
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
+            flex-direction: column;
+            -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center;
+            justify-content: center;
+        }
+
+        .contactusTitle {
+            font-size: 2em;
+        }
+
+        .template_logo-container {
+            padding: unset;
+
+        }
     }
-    .contactusTitle {
-        font-size: 2em;
-    }
-    .template_logo-container{
-        padding: unset;
-        
-    }
-}
 </style>
 
 <body data-ng-controller=portfolioController>
@@ -111,36 +119,31 @@
     </div>
 
     <!-- *******************************Footer******************************-->
-    <div class=footer>
-        <div class="copyrights made"><i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
+   <div class=footer>
+    <div class="copyrights made">
+        <div class="footer-link-container">
+            <a class="firstLink" href="./legal.html">Terms & Privacy</a>
+            <a href="./legal.html#disclaimer">Disclaimer</a>
+            <a href="./legal.html#cookie">Cookie Notice</a>
+            <a href="./legal.html#transparency">Transparency & Disclosure</a>
         </div>
-        <div class=footer_social>
-            <div class=social_media_icons><!-- <a style=text-decoration:none;color:#fff href=https://twitter.com/vaibhavti
-                    target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
-                </a> --><a style=text-decoration:none;color:#fff
-                    href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
-                </a><!-- <a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204 target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
-                </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
-                    target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
-                </a> --></div>
+        <div class="copyright">
+            <i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
         </div>
     </div>
+    <div class=footer_social>
+        <div class=social_media_icons>
+            <a style=text-decoration:none;color:#fff href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
+                <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+            </a>
+        </div>
+    </div>
+</div>
 
 
-    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js> </script> <script
-        src=jQuery-1.9.1.js></script>
-    <script src=jQqueryKnob.js></script>
-    <script src=smooth%20scroll.js></script>
-    <script src=inview.js></script>
-    <script src=soul.min.js></script>
-    <script src=files.js></script>
-    <script src=tweenMax.min.js></script>
-    <script src=ScrollToPlugin.min.js></script>
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <script src=https://www.gstatic.com/firebasejs/3.0.3/firebase.js> </script> <script
-        src=https://www.gstatic.com/firebasejs/live/3.0/firebase.js> </script> <script
-        src=https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js> </script> </body> </html>
+    <script defer src="./js/angular.min.js"></script>
+    <script defer src="jQuery-1.9.1.js"></script>
+    <script defer src=files.js></script>
+</body>
+
+</html>

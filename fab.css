@@ -3,7 +3,6 @@
     width:25px;
     background: grey;
     margin-bottom:1px;
-    -webkit-transition:all 400ms;
     transition: all 400ms;
     background: white;
     border-radius: 5px;
@@ -11,13 +10,11 @@
     right:0;
     border: 1px solid black;
 }
-.expand1{
-    -webkit-transform : rotate(45deg);transform : rotate(45deg);
+.expand1{transform : rotate(45deg);
     margin-top: 8px;
     
 }
-.expand3{
-    -webkit-transform : rotate(-45deg);transform : rotate(-45deg);
+.expand3{transform : rotate(-45deg);
     margin-top: -8px;
 }
 .expand2{

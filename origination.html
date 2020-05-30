@@ -1,248 +1,327 @@
 <html data-ng-app=portfolio>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
 <title>Cepheus Analytics</title>
-<link href=portico.css rel=stylesheet>
+<link href=portico.min.css rel=stylesheet>
 <link href=fab.min.css rel=stylesheet>
-<link href=media-min-961.css rel=stylesheet>
-<link href=media-320.css rel=stylesheet>
-<link href=media-max-960.css rel=stylesheet>
+<link href=media-min-961.min.css rel=stylesheet>
+<link href=media-320.min.css rel=stylesheet>
+<link href=media-max-960.min.css rel=stylesheet>
 <link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
 <link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon>
 <link href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon>
-<link rel="stylesheet" href="./template.css">
+<link rel="stylesheet" href="./template.min.css">
 
 <body data-ng-controller=portfolioController>
 
-    <div class=loader-container id=loader-div>
-        <div class="loaderImg">
-            <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo" />
-        </div>
+<div class=loader-container id=loader-div>
+    <div class="loaderImg">
+        <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+    </div>
+    <div>
+        Loading...
+    </div>
+</div>
+<div class=body-pre></div>
+
+<div class=body-main><a style=display:none class=go-to-top id=back-to-top>
+    <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
+</a>
+    <!--**************************Header**************************-->
+    <div class=header-container>
         <div>
-            Loading...
         </div>
-    </div>
-    <div class=body-pre></div>
+        <div class=fab-cont style=display:none>
+            <div class="line one" id=one></div>
+            <div class="line two" id=two></div>
+            <div class="line three" id=three></div>
+        </div>
+        <div class=top-menu id=top-menu>
+            <a href="./index.html" style=text-decoration:none;color:#234a58>
+                <div class="logo-container">
+                    <img src="images/nav-header/cepheusanalytics_hori_trans.png" alt="Logo"/>
+                </div>
+            </a>
+            <!--**************************Nav**************************-->
+            <div class="menu-item-container">
+                <div class=top-menu-sub id=Contact>
+                    <a href="./index.html" style=text-decoration:none;color:#234a58>
+                        Home
+                    </a>
+                </div>
 
-    <div class=body-main><a style=display:none class=go-to-top id=back-to-top>
-            <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
-        </a>
-        <!--**************************Header**************************-->
-        <div class=header-container>
-            <div>
-            </div>
-            <div class=fab-cont style=display:none>
-                <div class="line one" id=one></div>
-                <div class="line two" id=two></div>
-                <div class="line three" id=three></div>
-            </div>
-            <div class=top-menu id=top-menu>
-                <a href="./index.html" style=text-decoration:none;color:#234a58>
-                    <div class="logo-container">
-                        <img src="images/nav-header/cepheusanalytics_hori_trans.png" alt="Logo"/>
-                    </div>
-                </a>
-                <!--**************************Nav**************************-->
-                <div class="menu-item-container">
-                    <div class=top-menu-sub id=Contact>
-                        <a href="./index.html" style=text-decoration:none;color:#234a58>
-                            Home
+                <div class=top-menu-sub id=AboutUs>
+                    <a href="./aboutUs.html" style=text-decoration:none;color:#234a58>
+                        About Us
+                    </a>
+                </div>
+                <div class=top-menu-sub id="solutions">
+                    <span class="solutionClick">Solutions</span>
+                    <i class="fas fa-angle-right solutionClick" id="unique"></i>
+                    <ul>
+                        <li class=top-menu-sub>
+                            <a href="./origination.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Origination</li>
                         </a>
-                    </div>
-
-                    <div class=top-menu-sub id=Education data-ng-click="scroller('midsection') ">About Us
-
-                    </div>
-                    <div class=top-menu-sub id="solutions">
-                        <span class="solutionClick">Solutions</span>
-                        <i class="fas fa-angle-right solutionClick" id="unique"></i>
-                        <ul>
-                            <li class=top-menu-sub>
-                                <a href="./origination.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Origination</li>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Analytics
                             </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Analytics
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./servicing.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Servicing
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./technology.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Technology
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./support.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> ERP Implementation and Support
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class=top-menu-sub id="resources"><span class="resourcesClick">Resources</span><i
-                            class="fas fa-angle-right resourcesClick"></i>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./servicing.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Servicing
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./technology.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Technology
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./support.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> ERP Implementation and Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=top-menu-sub id="resources"><span class="resourcesClick">Resources</span><i
+                        class="fas fa-angle-right resourcesClick"></i>
+                    <ul>
+                        <li class=top-menu-sub>
+                            <a href="./news.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> News
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./media.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Media
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./blog.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Blog
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./caseStudy.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Case Study
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=top-menu-sub id=Contact>
+                    <a href="./contactUs.html" style=text-decoration:none;color:#234a58>
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--**************************Page Content**************************-->
+    <div class="card-section-container">
+        <!--**************************Common Area with logo**************************-->
+        <div class="top-backg">
+            <div class="template_logo-container">
+                <img src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+            </div>
+        </div>
+        <!--**************************Page Title**************************-->
+        <div class="contactusTitle img-holder">
+            <!-- <div class="">
+                    <i class=" fas fa-chart-bar btmspace-30"></i>
+                </div>
+                <div class="sepr"><div></div></div> -->
+            <div class="textToUppercase">
+                Originations
+            </div>
+        </div>
+        <!-- <div class="content-container">
+                <h2><i>Sub Heading</i></h2>
+            </div> -->
+        <div class="content">
+            <p>
+                Originating Loans is a costly and often random spend.
+                If that is your experience and you want to increase the
+                conversion rate and identify cohorts of underlying credits
+                with a better risk/return profile, we can help.
+            </p>
+        </div>
+
+        <div class="section-container">
+            <div class="parentDiv">
+                <div class="leftDiv"
+                     style="background-image:url('images/pages/solutions/originations/origination-01.jpg');">
+                </div>
+                <div class="rightDiv">
+                    <h2 class="textToUppercase noSubHeadingColor">Online Marketing</h2>
+                    <div class="innerHeading">
+                        <!--<h4>&nbsp; Online Marketing</h4>-->
                         <ul>
-                            <li class=top-menu-sub><i class="fa fa-link"></i> News</li>
-                            <li class=top-menu-sub><i class="fa fa-link"></i> Media</li>
-                            <li class=top-menu-sub><i class="fa fa-link"></i> Blog</li>
-                            <li class=top-menu-sub><i class="fa fa-link"></i> Case Study</li>
+                            <li><i class="fas fa-check"></i>Complete digital marketing strategy and website maintenance
+                            </li>
+                            <li><i class="fas fa-check"></i>Google SEO</li>
+                            <li><i class="fas fa-check"></i>Facebook/other social network CAC optimization</li>
+                            <li><i class="fas fa-check"></i>Optimal online acquisition via broker channels</li>
                         </ul>
                     </div>
-
-                    <div class=top-menu-sub id=Contact>
-                        <a href="./contactUs.html" style=text-decoration:none;color:#234a58>
-                            Contact Us
-                        </a>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <!--**************************Page Content**************************-->
-        <div class="card-section-container">
-            <!--**************************Common Area with logo**************************-->
-            <div class="top-backg">
-                <div class="template_logo-container">
-                    <img src="images/pages/cepheus-trans-logo.png" alt="Logo" />
+        <div class="section-container animatable">
+            <div class="parentDiv inverse">
+                <div class="leftDiv other"
+                     style="background-image:url('images/pages/solutions/originations/origination-02.jpg');">
+                </div>
+                <div class="rightDiv">
+                    <h2 class="textToUppercase noSubHeadingColor">Origination cost monitoring</h2>
+                    <div class="innerHeading">
+                        <!--<h4>&nbsp; Trustee Support​</h4>-->
+                        <ul>
+                            <li><i class="fas fa-check"></i>Cost monitoring of marketing spend across channels</li>
+                            <li><i class="fas fa-check"></i>Day to day reporting on efficacy of marketing dollars</li>
+                            <li><i class="fas fa-check"></i>Working with portfolio manager to determine origination
+                                channels vs risk profile and credit quality
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!--**************************Page Title**************************-->
+        </div>
+        <div class="section-container">
+            <div class="parentDiv">
+                <div class="leftDiv"
+                     style="background-image:url('images/pages/solutions/originations/origination-03.jpg');">
+                </div>
+                <div class="rightDiv">
+                    <h2 class="textToUppercase noSubHeadingColor">Increasing Conversion Rate</h2>
+                    <div class="innerHeading">
+                        <!--<h4>&nbsp; Online Marketing</h4>-->
+                        <ul>
+                            <li><i class="fas fa-check"></i>Focused marketing to clients with high probability of
+                                acceptance
+                            </li>
+                            <li><i class="fas fa-check"></i>Dynamic marketing strategies to move in sync with the
+                                customer base
+                            </li>
+                            <!--<li><i class="fas fa-check"></i>Facebook/other social network CAC optimization</li>
+                            <li><i class="fas fa-check"></i>Optimal online acquisition via broker channels</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-container animatable">
+            <div class="parentDiv inverse">
+                <div class="leftDiv other"
+                     style="background-image:url('images/pages/solutions/originations/origination-04.jpg');">
+                </div>
+                <div class="rightDiv">
+                    <h2 class="textToUppercase noSubHeadingColor">Alpha identification</h2>
+                    <div class="innerHeading">
+                        <!--<h4>&nbsp; Trustee Support​</h4>-->
+                        <ul>
+                            <li><i class="fas fa-check"></i>Focus will be on identifying cohorts of clients who are
+                                wrongly classified by traditional scorecards
+                            </li>
+                            <li><i class="fas fa-check"></i>Using several unique datapoints to predict quality prime
+                                borrowers among subprime data sets
+                            </li>
+                            <li><i class="fas fa-check"></i>Scorecard development for cohorts without any credit history
+                                or cross-jurisdiction data
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*********************CEPHEUS ADVANTAGE*********************-->
+        <div class="cepheusAdvantage">
             <div class="contactusTitle">
-                <!-- <div class="">
-                        <i class=" fas fa-chart-bar btmspace-30"></i>
-                    </div>
-                    <div class="sepr"><div></div></div> -->
                 <div class="textToUppercase">
-                    Originations
+                    Cepheus Advantage
                 </div>
             </div>
-            <!-- <div class="content-container">
-                    <h2><i>Sub Heading</i></h2>
-                </div> -->
-            <div class="content">
-                <p>
-                    Originating Loans is a costly and often random spend.
-                    If that is your experience and you want to increase the
-                    conversion rate and identify cohorts of underlying credits
-                    with a better risk/return profile, we can help.
-                </p>
-            </div>
-
-            <div class="section-container">
-                <div class="parentDiv">
-                    <div class="leftDiv" style="background-image:url('images/pages/solutions/originations/originiations-01.jpg');">
-                    </div>
-                    <div class="rightDiv">
-                        <h2 class="textToUppercase">Online Marketing</h2>
-                        <div class="innerHeading">
-                            <!--<h4>&nbsp; Online Marketing</h4>-->
-                            <ul>
-                                <li><i class="fas fa-check"></i>Complete digital marketing strategy and website maintenance</li>
-                                <li><i class="fas fa-check"></i>Google SEO</li>
-                                <li><i class="fas fa-check"></i>Facebook/other social network CAC optimization</li>
-                                <li><i class="fas fa-check"></i>Facebook/other social network CAC optimization</li>
-                            </ul>
+            <div class="cardHolder twoinarow">
+                <div class="card-container cctwoinarow first">
+                    <div class="card">
+                        <div class=image>
+                            <i class="fas fa-trophy"></i>
                         </div>
-                        <!--  <div class="innerHeading">
-                             <h4>&nbsp; Origination cost monitoring</h4>
-                             <ul>
-                                 <li><i class="fas fa-check"></i>Cost monitoring of marketing spend across channels</li>
-                                 <li><i class="fas fa-check"></i>Day to day reporting on efficacy of marketing dollars</li>
-                                 <li><i class="fas fa-check"></i>Working with portfolio manager to determine origination channels vs risk profile and credit quality </li>
-                             </ul>
-                         </div>
-                        <div class="innerHeading">
-                             <h4>&nbsp; Surveillance​</h4>
-                             <ul>
-                                 <li><i class="fas fa-check"></i>Bespoke surveillance</li>
-                                 <li><i class="fas fa-check"></i>Trustee relationship management</li>
-                             </ul>
-                         </div>
-                         <div class="innerHeading">
-                             <h4>&nbsp; Other Analytics​​</h4>
-                             <ul>
-                                 <li><i class="fas fa-check"></i>Loan book valuation</li>
-                                 <li><i class="fas fa-check"></i>Loan level data cleaning</li>
-                                 <li><i class="fas fa-check"></i>Securitization modelling and default projections</li>
-                             </ul>
-                         </div>-->
-                    </div>
-                </div>
-            </div>
-            <div class="section-container animatable">
-                <div class="parentDiv inverse">
-                    <div class="leftDiv other" style="background-image:url('images/pages/solutions/originations/originiations-02.jpg');">
-                    </div>
-                    <div class="rightDiv">
-                        <h2 class="textToUppercase">Origination cost monitoring</h2>
-                        <div class="innerHeading">
-                            <!--<h4>&nbsp; Trustee Support​</h4>-->
-                            <ul>
-                                <li><i class="fas fa-check"></i>Cost monitoring of marketing spend across channels</li>
-                                <li><i class="fas fa-check"></i>Day to day reporting on efficacy of marketing dollars</li>
-                                <li><i class="fas fa-check"></i>Working with portfolio manager to determine origination channels vs risk profile and credit quality </li>
-                            </ul>
+                        <div class="card-title">
+                            Experience Driven Approach
                         </div>
-                        <!--<div class="innerHeading">
-                            <h4>&nbsp; Credit Markets​</h4>
-                            <ul>
-                                <li><i class="fas fa-check"></i>Corporate Credit Research</li>
-                                <li><i class="fas fa-check"></i>Credit Analysis and Modeling​</li>
-                                <li><i class="fas fa-check"></i>Capital Structure modeling</li>
-                            </ul>
-                        </div>-->
+                        <div class="card-description">
+                            We have direct experience of seeing several such business in this space and can offer
+                            actionable strategies which will immediately reflect in bottom lines
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </div>
+                <div class="card-container cctwoinarow">
+                    <div class="card">
+                        <div class="image last-card">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <div class="card-title">
+                            Adaptive Approach
+                        </div>
+                        <div class="card-description">
+                            We are not tied to traditional models and are always looking to change strategies depending
+                            on how customer preferences evolve &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
 
-    <!-- *******************************Footer******************************-->
-    <div class=footer>
-        <div class="copyrights made"><i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
-        </div>
-        <div class=footer_social>
-            <div class=social_media_icons>
-                <!-- <a style=text-decoration:none;color:#fff
-                    href=https://twitter.com/vaibhavti target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
-                </a> -->
-                <a style=text-decoration:none;color:#fff
-                   href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
-                </a>
-                <!--  <a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204
-                     target=_blank>
-                     <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
-                 </a>
-                 <a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
-                     target=_blank>
-                     <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
-                 </a> -->
+                <div class="card-container cctwoinarow last">
+                    <div class="card">
+                        <div class=image>
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="card-title">
+                            Parallel Solution
+                        </div>
+                        <div class="card-description">
+                            The solutions we suggest can be implemented alongside your existing business. We don’t fix
+                            it if it isn’t broken &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+
+<!-- *******************************Footer******************************-->
+<div class=footer>
+    <div class="copyrights made">
+        <div class="footer-link-container">
+            <a class="firstLink" href="./legal.html">Terms & Privacy</a>
+            <a href="./legal.html#disclaimer">Disclaimer</a>
+            <a href="./legal.html#cookie">Cookie Notice</a>
+            <a href="./legal.html#transparency">Transparency & Disclosure</a>
+        </div>
+        <div class="copyright">
+            <i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
+        </div>
+    </div>
+    <div class=footer_social>
+        <div class=social_media_icons>
+            <a style=text-decoration:none;color:#fff href="https://www.linkedin.com/company/cepheus-analytics-limited"
+               target=_blank>
+                <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+            </a>
+        </div>
+    </div>
+</div>
 
 
-    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js></script>
-    <script src=jQuery-1.9.1.js></script>
-    <script src=jQqueryKnob.js></script>
-    <script src=smooth%20scroll.js></script>
-    <script src=inview.js></script>
-    <script src=soul.min.js></script>
-    <script src=files.js></script>
-    <script src=tweenMax.min.js></script>
-    <script src=ScrollToPlugin.min.js></script>
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <script src=https://www.gstatic.com/firebasejs/3.0.3/firebase.js></script>
-    <script src=https://www.gstatic.com/firebasejs/live/3.0/firebase.js></script>
-    <script src=https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js></script>
+<script defer src="./js/angular.min.js"></script>
+<script defer src="jQuery-1.9.1.js"></script>
+<script defer src=files.js></script>
 </body>
 
 </html>

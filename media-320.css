@@ -22,36 +22,23 @@
     }
     .certifications{
         /*margin-top: 16px !important;*/
-        margin-left: 18px; !important;
-        -webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
+        margin-left: 18px;justify-content: flex-start;
     }
     .image_enclose{
         height: 28px !important;
         width: 28px !important;
         border: 1px solid #C7C7C7;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
     }
     .certification_heading{
         margin-left: 16px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         font-size: 14px;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
         position: relative;
         letter-spacing: 0.8;
     }
@@ -70,8 +57,7 @@
         margin-left: 18px !important;
         margin-top: 0px !important;
         margin-left: 18px !important;
-        padding-top: 10px;
-        -webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
+        padding-top: 10px;justify-content: flex-start;
         max-height: 197px;
     }
     .cert_content{
@@ -85,26 +71,17 @@
     }
         
 .name-and-email-container {
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-left: 15px;
     margin-right: 27px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: 99px;
     
 }
 
 .contact-email-container {
-    -webkit-box-flex:1;
-        -ms-flex:1 100%;
-            flex:1 100%;
+    flex:1 100%;
    
 }
 
@@ -119,9 +96,7 @@
 }
 
 .contact-email-name-sub-container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 100%;
-            flex: 1 100%;
+    flex: 1 100%;
     margin-left: 11px;
 } 
 .contact-textarea {
@@ -151,15 +126,9 @@
     border: 1px solid #a9a9a9;
     height: 40px;
     width: 152px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     color: #a9a9a9;
     font-family: cool;
     font-size: 14px;
@@ -169,10 +138,7 @@
     margin-top: 5%;
    margin-bottom: 18px !important;
     height: 135px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
                                 
                                 

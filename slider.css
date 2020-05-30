@@ -11,8 +11,6 @@
 
 .site-wrap:before {
   display: none;
-  -webkit-transition: 0.3s all ease-in-out;
-  -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   background: rgba(0, 0, 0, 0.6);
   content: "";
@@ -24,6 +22,10 @@
   bottom: 0;
   opacity: 0;
   visibility: hidden;
+}
+::-moz-selection {
+  background: #000;
+  color: #fff;
 }
 ::selection {
   background: #000;
@@ -80,16 +82,7 @@ user agent stylesheet section {
   }
 }
 
-/*
-blockquote {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-}*/
-
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .site-section {
     padding: 8em 0 5em 0;
   }

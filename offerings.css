@@ -126,7 +126,7 @@ body {
 
 .btn {
 	display: inline-block;
-	padding: 8px 18px 10px;
+    padding: 10px 25px 10px;
 	text-transform: uppercase;
 	border: 1px solid
 }
@@ -292,7 +292,9 @@ h6,
 	font-weight: normal;
 	text-transform: uppercase
 }
-
+.heading a {
+    color:#ffffff;
+}
 .heading.nospace {
 	margin: 0
 }
@@ -526,7 +528,7 @@ section {
 
 .sectiontitle * {
 	margin: 0;
-	font-size:4em;
+	font-size: 3.5em;
 }
 
 .services {
@@ -801,7 +803,7 @@ section {
 	padding: 0
 }
 
-*,
+
 *::before,
 *::after {
 	transition: all .3s ease-in-out
@@ -1229,7 +1231,8 @@ textarea:focus,
 .btn.inverse:hover {
 	color: #FFF;
 	background-color: #0a8182;
-	border-color: #0a8182
+	border-color: #0a8182;
+	border-radius: 30px;
 }
 
 .btn:hover,
