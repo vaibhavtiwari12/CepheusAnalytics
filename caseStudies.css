@@ -1,22 +1,22 @@
-.container-media{
+.container-caseStudy{
     padding-bottom:40px;
     padding-top: 40px;
     border-bottom: 1px solid rgb(199, 199, 199);
 }
-.mediaFirst{
+.caseStudy{
     padding-top: 40px
 }
 
-.mediaHeading{
+.caseStudyHeading{
    border-bottom: 1px solid black;
 }
-.mediaHeading h2 {
+.caseStudyHeading h2 {
     margin: unset;
 }
-.mediaContent{
+.caseStudyContent{
     margin-top: 30px;
 }
-.mediagerDetails{
+.caseStudygerDetails{
    margin: 5px 0 0 0;
 }
 .btn-read-more, .btn-read-more.inverse:hover {
@@ -35,6 +35,21 @@
     color: inherit;
     background-color: transparent;
     border-color: inherit;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+  padding:0 0 20px 20px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #1a313e;
+}
+.expandable .expand-bar {
+    line-height: 35px!important;
 }
 @media screen and (max-width: 960px) {
     .two_third {

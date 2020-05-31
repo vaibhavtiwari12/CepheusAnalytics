@@ -1,22 +1,22 @@
-.container-caseStudy{
+.container-media{
     padding-bottom:40px;
     padding-top: 40px;
     border-bottom: 1px solid rgb(199, 199, 199);
 }
-.caseStudyFirst{
+.mediaFirst{
     padding-top: 40px
 }
 
-.caseStudyHeading{
+.mediaHeading{
    border-bottom: 1px solid black;
 }
-.caseStudyHeading h2 {
+.mediaHeading h2 {
     margin: unset;
 }
-.caseStudyContent{
+.mediaContent{
     margin-top: 30px;
 }
-.caseStudygerDetails{
+.mediagerDetails{
    margin: 5px 0 0 0;
 }
 .btn-read-more, .btn-read-more.inverse:hover {

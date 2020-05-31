@@ -1,213 +1,219 @@
 <html data-ng-app=portfolio>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
 <title>Cepheus Analytics</title>
-<link href="portico.min.css" rel=stylesheet>
+<link href=portico.min.css rel=stylesheet>
 <link href=fab.min.css rel=stylesheet>
 <link href=media-min-961.min.css rel=stylesheet>
+<link href=media-320.css rel=stylesheet>
 <link href=media-max-960.min.css rel=stylesheet>
-<link href=media-320.min.css rel=stylesheet>
 <link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
-<link href="images/nav-header/chepheus-logo-only.svg"  rel="shortcut icon" type=image/x-icon> <link href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon>
+<link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon>
+<link href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon>
+<link rel="stylesheet" href="./template.min.css">
+<link rel="stylesheet" href="./offerings.min.css">
 <link rel="stylesheet" href="./contactus.min.css">
 
-<body data-ng-controller=portfolioController>
-    <div class=loader-container id=loader-div>
-        <div class="loaderImg">
-            <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo" />
-        </div>
-        <div>
-            Loading...
-        </div>
-    </div>
-    <div class=body-pre></div>
-    <div class=body-main><a style=display:none class=go-to-top id=back-to-top>
-            <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
-        </a>
-        <!--**************************Header**************************-->
-        <div class=header-container>
-            <div>
-            </div>
-            <div class=fab-cont style=display:none>
-                <div class="line one" id=one></div>
-                <div class="line two" id=two></div>
-                <div class="line three" id=three></div>
-            </div>
-            <div class=top-menu id=top-menu>
-                 <a href="./index.html" style=text-decoration:none;color:#234a58>
-                    <div class="logo-container">
-                        <img src="images/nav-header/cepheusanalytics_hori_trans.png" alt="Logo"/>
-                    </div>
-                </a>
-                <!--**************************Nav**************************-->
-                <div class="menu-item-container">
-                    <div class=top-menu-sub id=Contact>
-                        <a href="./index.html" style=text-decoration:none;color:#234a58>
-                            Home
-                        </a>
-                    </div>
 
-                    <div class=top-menu-sub id=AboutUs>
+<body data-ng-controller=portfolioController>
+<div class=loader-container id=loader-div>
+    <div class="loaderImg">
+        <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+    </div>
+    <div>
+        Loading...
+    </div>
+</div>
+<div class=body-pre></div>
+<div class=body-main>
+    <a style=display:none class=go-to-top id=back-to-top>
+        <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
+    </a>
+    <!--**************************Header**************************-->
+    <div class=header-container>
+        <div>
+        </div>
+        <div class=fab-cont style=display:none>
+            <div class="line one" id=one></div>
+            <div class="line two" id=two></div>
+            <div class="line three" id=three></div>
+        </div>
+        <div class=top-menu id=top-menu>
+           <a href="/ProjectAlpha/" style=text-decoration:none;color:#234a58>
+                <div class="logo-container">
+                    <img src="images/nav-header/cepheusanalytics_hori_trans.png" alt="Logo"/>
+                </div>
+            </a>
+            <!--**************************Nav**************************-->
+            <div class="menu-item-container">
+                <div class=top-menu-sub id=Contact>
+                   <a href="/ProjectAlpha/" style=text-decoration:none;color:#234a58>
+                        Home
+                    </a>
+                </div>
+                <div class=top-menu-sub id=AboutUs>
                     <a href="./aboutUs.html" style=text-decoration:none;color:#234a58>
                         About Us
                     </a>
                 </div>
-                    <div class=top-menu-sub id="solutions">
-                        <span class="solutionClick">Solutions</span>
-                        <i class="fas fa-angle-right solutionClick" id="unique"></i>
-                        <ul>
-                            <li class=top-menu-sub>
-                                <a href="./origination.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Origination</li>
-                            </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Analytics
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./servicing.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Servicing
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./technology.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Technology
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./support.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> ERP Implementation and Support
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class=top-menu-sub id="resources"><span class="resourcesClick">Resources</span><i
-                            class="fas fa-angle-right resourcesClick"></i>
-                        <ul>
-                            <li class=top-menu-sub>
-                                <a href="./home.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> News
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./home.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Media
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./blog.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Blog
-                                </a>
-                            </li>
-                            <li class=top-menu-sub>
-                                <a href="./caseStudy.html" style=text-decoration:none;color:#234a58>
-                                    <i class="fa fa-link"></i> Case Study
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class=top-menu-sub id=Contact>
-                        <a href="./contactUs.html" style=text-decoration:none;color:#234a58>
-                            Contact Us
+                <div class=top-menu-sub id="solutions">
+                    <span class="solutionClick">Solutions</span>
+                    <i class="fas fa-angle-right solutionClick" id="unique"></i>
+                    <ul>
+                        <li class=top-menu-sub>
+                            <a href="./origination.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Origination
+                        </li>
                         </a>
-                    </div>
-
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Analytics
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./servicing.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Servicing
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./technology.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Technology
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./support.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> ERP Implementation and Support
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="card-section-container">
-          <!--   <div>
-                <img class="logo-title" src="images/pages/cepheus-trans-logo.png" alt="Logo" />
-            </div> -->
-           
-            <div>
-                <div class="CU_title">
-                    Contact Us
+                <div class="top-menu-sub" id="resources">
+                    <span class="resourcesClick">Resources</span><i
+                        class="fas fa-angle-right resourcesClick"></i>
+                    <ul>
+                        <li class=top-menu-sub>
+                            <a href="./home.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> News
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./home.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Media
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./blog.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Blog
+                            </a>
+                        </li>
+                        <li class=top-menu-sub>
+                            <a href="./caseStudy.html" style=text-decoration:none;color:#234a58>
+                                <i class="fa fa-link"></i> Case Study
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="cardHolder">
-                <div class="card-container contact-card-container">
-                    <div class=circle_div_container>
-                        <div class=circle_icon_container>
-                            <div class=circular_div><i class="fas fa-map-marker-alt" aria-hidden=true></i></div>
-                        </div>
-                        <div class="contact_details_all contactus-details">
-                            <div class="sub_text_contact country-title address-title">United Kingdom</div>
-                        </div>
-                    </div>
-                    <div class="address-container">
-                        <div>29 Farm Street, Mayfair,</div>
-                        <div>London W1J 5RL</div>
-                    </div>
-                    <div class="address-sep"></div>
-                    <div class=circle_div_container>
-                        <div class=circle_icon_container>
-                            <div class=circular_div><i class="fas fa-map-marker-alt" aria-hidden=true></i></div>
-                        </div>
-                        <div class="contact_details_all contactus-details">
-                            <div class="sub_text_contact country-title address-title">India</div>
-                        </div>
-                    </div>
-                    <div class="address-container">
-                        <div>604 ‘B’ Wing, Prathamesh Tower </div>
-                        <div>Raghuvanshi Mill Compound</div>
-                        <div>Senapati Bapat Marg, Lower Parel (W)</div>
-                        <div>Mumbai – 400 013</div>
-                    </div>
-                </div>
-                <div class="card-container contact-card-container  contact-mid  last">
-                    <div class=circle_div_container>
-                        <div class=circle_icon_container>
-                            <div class=circular_div><i class="fas fa-phone small-icon" aria-hidden=true></i></div>
-                        </div>
-                        <div class="contact_details_all contactus-details">
-                            <div class="sub_text_contact country-title ">+44-203-129-4884</div>
-                        </div>
-                    </div>
-                    <div class="circle_div_container contact-email">
-                        <div class=circle_icon_container>
-                            <div class=circular_div><i class="fas fa-envelope small-icon" aria-hidden=true></i></div>
-                        </div>
-                        <div class="contact_details_all contactus-details"><a style=text-decoration:none;color:#234a58
-                                href=mailto:info@cepheusanalytics.com>
-                                <div class="sub_text_contact country-title">info@cepheusanalytics.com
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                
-                
-            </div>
-            
-        </div>
-        <!-- *******************************Footer******************************-->
-       <div class=footer>
-            <div class="copyrights made">
-                <div class="footer-link-container">
-                    <a class="firstLink" href="./legal.html">Terms & Privacy</a>
-                    <a href="./legal.html#disclaimer">Disclaimer</a>
-                    <a href="./legal.html#cookie">Cookie Notice</a>
-                    <a href="./legal.html#transparency">Transparency & Disclosure</a>
-                </div>
-                <div class="copyright">
-                    <i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
-                </div>
-            </div>
-            <div class=footer_social>
-                <div class=social_media_icons>
-                    <a style=text-decoration:none;color:#fff href="https://www.linkedin.com/company/cepheus-analytics-limited" target=_blank>
-                        <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+                <div class=top-menu-sub id=Contact>
+                    <a href="./contactUs.html" style=text-decoration:none;color:#234a58>
+                        Contact Us
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    
-<script defer src="./js/angular.min.js"></script>
-<script defer src="jQuery-1.9.1.js"></script>
-<script defer src=files.js></script>
-        
+    <!--**************************Page Content**************************-->
+    <div class="card-section-container1 noMarginBottom">
+        <!--**************************Common Area with logo**************************-->
+        <div class="top-backg">
+            <div class="template_logo-container">
+                <img src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+            </div>
+        </div>
+        <!--**************************Page Title**************************-->
+        <div class="contactusTitle img-holder">
+            <div class="textToUppercase">
+                Contact Us
+            </div>
+        </div>
+
+        <div class="wrapper bgded">
+            <section class="hoc container clear contactUsContainer">
+                <ul class="nospace group contactUs contact-card-container">
+                    <li class="one_quarter first">
+                        <div class="textToCenter">
+                            <i class="fas fa-4x fa-envelope btmspace-30 contactUsIcon"></i>
+                            <h6 class="heading font-x1 address-title">Email</h6>
+                        <ul class="nospace address-container">
+                            <li><a style=text-decoration:none;color:#222 href=mailto:info@cepheusanalytics.com>info@cepheusanalytics.com</a></li>
+                        </ul> </div>
+                    </li>
+                    <li class="one_quarter contactUsDetailSection">
+                        <div class="textToCenter">
+                            <i class="fas fa-4x fa-phone-alt btmspace-30 contactUsIcon"></i>
+                            <h6 class="heading font-x1 address-title">Contact</h6>
+                        <ul class="nospace address-container">
+                            <li>+44-203-129-4884</li>
+                        </ul> </div>
+                    </li>
+                    <li class="one_quarter textToCenter contactUsDetailSection">
+                        <div class="textToCenter">
+                            <i class="fas fa-4x fa-map-marker-alt btmspace-30 contactUsIcon"></i></i>
+                            <h6 class="heading font-x1 address-title">United Kingdom</h6>
+                        <ul class="nospace address-container">
+                            <li>29 Farm Street, Mayfair,</li>
+                            <li>London W1J 5RL </li>
+                        </ul> </div>
+                    </li>
+                    <li class="one_quarter textToCenter contactUsDetailSection">
+                        <div class="textToCenter">
+                            <i class="fas fa-4x fa-map-marker-alt btmspace-30 contactUsIcon"></i>
+                            <h6 class="heading font-x1 address-title">India</h6>
+                        <ul class="nospace address-container">
+                            <li>604 'B' Wing, Prathamesh Tower</li>
+                            <li>Raghuvanshi Mill Compound</li>
+                            <li>Senapati Bapat Marg, Lower Parel (W)</li>
+                            <li>Mumbai – 400013</li>
+                        </ul></div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+</div>
+    <!--***************** Map *****************-->
+    <div class="mapSection">
+        <div class="worldMap">
+            <image src="images/pages/contactUs/map01.png" style="width:100%"/>
+        </div>
+    </div>
+
+<!-- *******************************Footer******************************-->
+<div class=footer>
+    <div class="copyrights made">
+        <div class="footer-link-container">
+            <a class="firstLink" href="./legal.html">Terms & Privacy</a>
+            <a href="./legal.html#disclaimer">Disclaimer</a>
+            <a href="./legal.html#cookie">Cookie Notice</a>
+            <a href="./legal.html#transparency">Transparency & Disclosure</a>
+        </div>
+        <div class="copyright">
+            <i class="far fa-copyright" aria-hidden=true></i>&nbsp;Cepheus Analytics. 2020. All rights reserved.
+        </div>
+    </div>
+    <div class=footer_social>
+        <div class=social_media_icons>
+            <a style=text-decoration:none;color:#fff
+               href="https://www.linkedin.com/company/cepheus-analytics-limited"
+               target=_blank>
+                <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="js/angular.min.js"></script>
+<script src=jQuery-1.9.1.js></script>
+<script src="files.js"></script>
+
 </body>
 </html>

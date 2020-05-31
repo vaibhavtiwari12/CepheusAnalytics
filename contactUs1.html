@@ -8,57 +8,8 @@
 <link href=media-320.min.css rel=stylesheet>
 <link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
 <link href="images/nav-header/chepheus-logo-only.svg"  rel="shortcut icon" type=image/x-icon> <link href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon>
-<link rel="stylesheet" href="./coming-soon.min.css">
-<style>
-    .template_logo-container img {
-        height: 180px;
-        padding-left: 25px;
-    }
-    .contactusTitle {
-        padding-top: 0;
-        font-size: 2em;
-    }
-    .template_logo-container{
-    }
-    .card-section-container {
-        min-height: 100%;
-        width: 800px;
-    }
-    .cs_description{
-        padding-top: 0;
-        font-size: 16px;
-        font-family: cool;
-        padding: 0px 40px 15px 40px;
-        color: #1a313e;
-    }
-    .cardHolder {
-        padding: 10px 40px 50px 40px;
-    }
-    @media screen and (max-width: 960px) {
-      .card-section-container {
-            min-height: 100%;
-            width: 100%;
-        }  
-        .contactusTitle {
-            padding: 15px 40px 15px 40px;
-            text-align: center;
-        }
-         .template_logo-container img {
-            height: 180px;
-            padding-left: 0px;
-        }
-        .template_logo-container{
-            width: 100%;
-            text-align: center;
-        }
-        .template_logo-container a{
-            display: block;
-        }
-        .cs_description{
-            text-align: center;
-        }
-    }
-</style>
+<link rel="stylesheet" href="./contactus.min.css">
+
 <body data-ng-controller=portfolioController>
     <div class=loader-container id=loader-div>
         <div class="loaderImg">
@@ -72,10 +23,99 @@
     <div class=body-main><a style=display:none class=go-to-top id=back-to-top>
             <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
         </a>
+        <!--**************************Header**************************-->
         <div class=header-container>
             <div>
             </div>
-           
+            <div class=fab-cont style=display:none>
+                <div class="line one" id=one></div>
+                <div class="line two" id=two></div>
+                <div class="line three" id=three></div>
+            </div>
+            <div class=top-menu id=top-menu>
+                <a href="/ProjectAlpha/" style=text-decoration:none;color:#234a58>
+                    <div class="logo-container">
+                        <img src="images/nav-header/cepheusanalytics_hori_trans.png" alt="Logo"/>
+                    </div>
+                </a>
+                <!--**************************Nav**************************-->
+                <div class="menu-item-container">
+                    <div class=top-menu-sub id=Contact>
+                       <a href="/ProjectAlpha/" style=text-decoration:none;color:#234a58>
+                            Home
+                        </a>
+                    </div>
+
+                    <div class=top-menu-sub id=AboutUs>
+                    <a href="./aboutUs.html" style=text-decoration:none;color:#234a58>
+                        About Us
+                    </a>
+                </div>
+                    <div class=top-menu-sub id="solutions">
+                        <span class="solutionClick">Solutions</span>
+                        <i class="fas fa-angle-right solutionClick" id="unique"></i>
+                        <ul>
+                            <li class=top-menu-sub>
+                                <a href="./origination.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Origination</li>
+                            </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Analytics
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./servicing.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Servicing
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./technology.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Technology
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./support.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> ERP Implementation and Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=top-menu-sub id="resources"><span class="resourcesClick">Resources</span><i
+                            class="fas fa-angle-right resourcesClick"></i>
+                        <ul>
+                            <li class=top-menu-sub>
+                                <a href="./home.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> News
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./home.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Media
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./blog.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Blog
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./caseStudy.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Case Study
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class=top-menu-sub id=Contact>
+                        <a href="./contactUs.html" style=text-decoration:none;color:#234a58>
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <div class="card-section-container">
           <!--   <div>
@@ -83,16 +123,8 @@
             </div> -->
            
             <div>
-                 <div class="template_logo-container">
-                    <a href="/ProjectAlpha/" style=text-decoration:none;color:#234a58>
-                        <img src="images/pages/cepheus-trans-logo.png" alt="Logo" >
-                    </a>
-                </div>
-                <div class="contactusTitle">
-                    COMING SOON...
-                </div>
-                <div class="cs_description">
-                     Please reach out to us on below mentioned contact information. We are working on website and will be back Online shortly. Thank you for your patience.
+                <div class="CU_title">
+                    Contact Us
                 </div>
             </div>
             <div class="cardHolder">
@@ -151,7 +183,7 @@
             
         </div>
         <!-- *******************************Footer******************************-->
-        <div class=footer>
+       <div class=footer>
             <div class="copyrights made">
                 <div class="footer-link-container">
                     <a class="firstLink" href="./legal.html">Terms & Privacy</a>
@@ -172,9 +204,10 @@
             </div>
         </div>
     </div>
-   <script defer src="./js/angular.min.js"></script>
-    <script defer src="jQuery-1.9.1.js"></script>
-    <script defer src=files.js></script>
+    
+<script defer src="./js/angular.min.js"></script>
+<script defer src="jQuery-1.9.1.js"></script>
+<script defer src=files.js></script>
         
 </body>
 </html>
