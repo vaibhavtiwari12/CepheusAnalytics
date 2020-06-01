@@ -55,7 +55,7 @@ p{
 .answer{
     color: #2d2d2d;
 }
-.blogFirst ul {
+.blogContent ul {
   list-style-type: square;
   list-style-position: outside;
   list-style-image: none;

@@ -108,7 +108,7 @@ user agent stylesheet section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background:#7a7a7ac7;
+    background:rgba(122, 122, 122, 0.7803921568627451);
 }
 .slide-one-item .owl-dots .owl-dot.active span {
     background: #650915;
