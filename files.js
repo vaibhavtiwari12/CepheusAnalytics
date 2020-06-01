@@ -99,6 +99,16 @@ window.onload = function () {
           siteCarousel();
         }
         /****************Slider -- End***************/
+         var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+         var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+         if (window.location.hash && (isChrome || iOS)) {
+           setTimeout(function () {
+             var hash = window.location.hash;
+             window.location.hash = "";
+             window.location.hash = hash;
+           }, 300);
+         }
+        
 
         $(window).on("scroll", doAnimations);
         $(window).trigger("scroll");

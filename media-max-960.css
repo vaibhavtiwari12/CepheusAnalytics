@@ -643,6 +643,7 @@
   }
   .serve-container{
   min-height: 175px;
+  width: 100%;
   }
   .card-section-container{
     background: #fff;

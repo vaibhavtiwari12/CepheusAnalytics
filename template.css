@@ -378,6 +378,7 @@
 .cctwoinarow {
   min-height: 230px;
   max-width: 540px;
+  width:540px;
 }
 .cepheusAdvantage .contactusTitle {
   color: #fff;
@@ -416,6 +417,10 @@
 }
 .legal-title {
   padding-top: 90px;
+}
+.team-holder {
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 960px) {
   .content p {
@@ -532,6 +537,7 @@
   }
   .cctwoinarow {
     max-width: unset;
+    width:100%;
   }
   #aboutus .twoinarow {
     min-height: 763px;
@@ -571,6 +577,13 @@
   }
   .erp-container {
     min-height: 979px;
+  }
+  .origination-online {
+    min-height: 637px;
+  }
+  .origination-conversion{
+    min-height: 589px;
+
   }
 }
 @media screen and (min-width: 1080px) {

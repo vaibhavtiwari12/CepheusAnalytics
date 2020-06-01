@@ -37,7 +37,7 @@
     border-color: inherit;
 }
 
-ul {
+.caseStudyFirst ul {
   list-style-type: square;
   list-style-position: outside;
   list-style-image: none;
@@ -51,6 +51,7 @@ h4 {
 .expandable .expand-bar {
     line-height: 35px!important;
 }
+
 @media screen and (max-width: 960px) {
     .two_third {
         margin: 0 0 40px 0;
